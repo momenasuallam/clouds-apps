@@ -1,0 +1,439 @@
+.navbar {
+  position: fixed !important;
+  z-index: 99999 !important;
+}
+.mainrowsearch {
+  padding-top: 75px;
+}
+.filterresults {
+  padding: 8px 0px !important;
+}
+.filtersearch {
+  width: 19%;
+  position: fixed;
+}
+.navbar-brand {
+  margin-right: 13% !important;
+}
+.filtersearch .linebellow {
+  position: fixed !important;
+  z-index: 9;
+  top: 110px !important;
+  width: 19%;
+}
+.filterresults .linebellow {
+  top: 110px !important;
+}
+@media (max-width: 768px) {
+  .filtersearch {
+    width: 100% !important;
+    position: relative !important;
+  }
+  .filterresults {
+    padding: 15px 0px 15px 15px !important;
+  }
+}
+
+/* Workout page style */
+.bg1 {
+  background-color: #080915;
+  height: 100%;
+}
+.workoutsreach {
+  background-color: #080915;
+  min-height: 100vh;
+  height: 100%;
+  padding: 70px 30px;
+}
+.accordion-item {
+  margin-bottom: 20px;
+  background: #1c1d27;
+  border-radius: 12px !important;
+}
+.accordion-button {
+  border-radius: 12px !important;
+  background: #1c1d27 !important;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 25px;
+  color: #d1d2de;
+}
+.accordion-button::after {
+  background-image: url(../img/expand.svg) !important;
+  transform: rotate(0deg) !important;
+  background-size: 10px !important;
+  position: absolute;
+  right: 22px;
+  top: 26px;
+}
+.accordion-button:not(.collapsed) {
+  color: #d1d2de !important;
+}
+.accordion-body {
+  border-top: 1px solid #313240 !important;
+  color: #fff;
+}
+.accordion-button:focus {
+  box-shadow: 0 0 0 0rem rgb(13 110 253 / 0%) !important;
+}
+.acmainbody {
+}
+.acmainbody .woimg {
+  width: 100%;
+}
+.acmainbody h1 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 37px;
+  /* identical to box height */
+
+  color: #d1d2de;
+}
+.acmainbody p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 22px;
+  /* identical to box height */
+
+  color: #d1d2de;
+}
+.acmainbody .row {
+  border-top: 1px solid #262839;
+  padding-top: 15px;
+}
+.acmainbody .row:first-child {
+  border-top: 0px solid !important;
+  padding-top: 0px !important;
+}
+.youtubebtn {
+  margin: 25px 0 15px;
+  display: inline-block;
+  text-decoration: none;
+}
+.youtubebtn img {
+  width: 116.41px;
+  height: 50px;
+}
+.setsclass {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+.setsclass p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  /* identical to box height */
+
+  color: #d1d2de;
+  margin-bottom: 10px !important;
+}
+.setsclass button {
+  background: #38394d;
+  border-radius: 5px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  /* identical to box height */
+  color: #737486;
+  border: 0px solid;
+  margin-left: 14px;
+  padding: 10px 16px;
+}
+.donebtnclickedafter {
+  background: #00a8ff !important;
+  color: #fff !important;
+}
+.donebtnclickedafter1 {
+  background: #00a8ff !important;
+  color: #fff !important;
+}
+.donebtnclickedafter2 {
+  background: #00a8ff !important;
+  color: #fff !important;
+}
+.donebtnclickedafter3 {
+  background: #00a8ff !important;
+  color: #fff !important;
+}
+.donebtnclickedafter4 {
+  background: #00a8ff !important;
+  color: #fff !important;
+}
+.donebtnclickedafter5 {
+  background: #00a8ff !important;
+  color: #fff !important;
+}
+.donebtnclickedafter6 {
+  background: #00a8ff !important;
+  color: #fff !important;
+}
+.donebtnclickedafter7 {
+  background: #00a8ff !important;
+  color: #fff !important;
+}
+.donebtnclickedafter8 {
+  background: #00a8ff !important;
+  color: #fff !important;
+}
+.setsclass button img {
+  width: 17px;
+  height: 17px;
+  margin-right: 4px;
+}
+.weekenddiv {
+  padding: 25px 0;
+}
+.weekenddiv ul {
+  list-style: none;
+  padding-left: 0px !important;
+}
+.weekenddiv a {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  /* identical to box height */
+  display: block;
+  text-decoration: none;
+  cursor: pointer;
+  color: #d1d2de !important;
+  padding: 12px 22px;
+}
+.weekenddiv .active {
+  background: #262839;
+}
+.bgactiveweek {
+  background: #262839;
+}
+.tablinks {
+  cursor: pointer;
+}
+.line2 {
+  position: absolute;
+  z-index: 9;
+  top: 33px;
+  width: 100%;
+  background: #262839;
+  left: 0;
+}
+
+@media (max-width: 768px) {
+  .setsclass {
+    align-items: start;
+    margin-top: 5px;
+  }
+  .youtubebtn {
+    margin: 10px 0 6px;
+  }
+}
+.tab_item {
+  display: none;
+}
+.tab_item:first-child {
+  display: block;
+}
+
+.checkbox label {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+
+  background: #38394d;
+  border-radius: 5px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  /* identical to box height */
+  color: #737486;
+  border: 0px solid;
+  padding: 10px 12px 10px 41px;
+  width: 100px;
+  margin-left: 14px;
+}
+
+.checkbox label:before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 15px;
+}
+
+.checkbox input[type="checkbox"] {
+  display: none;
+}
+
+.checkbox label:before {
+  background: url("../img/check-light.svg") left center no-repeat;
+  margin-top: 0px;
+}
+
+.checkbox input[type="checkbox"]:checked + label:before {
+  background: url("../img/check-white.svg") left center no-repeat;
+}
+.checkbox input[type="checkbox"]:checked + label {
+  background: #00a8ff !important;
+  color: #fff !important;
+}
+
+/* diet plan page */
+.mainsidedivplans {
+  min-height: 100vh;
+  overflow-x: auto !important;
+}
+.planswithdate {
+  background-color: #1c1d27;
+  margin: 30px 20px 30px 10px;
+  border-radius: 10px;
+  padding: 30px 0 0;
+  width: 1050px;
+}
+.dietplanloads {
+  padding: 15px 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.divloads {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  background: #1c1d27;
+  border-radius: 5px;
+  padding: 4px 8px;
+  margin-bottom: 8px;
+  margin-right: 4px;
+  max-width: 200px;
+}
+.divloads div:first-child {
+  /* width: 30%; */
+}
+.divloads div:last-child {
+  /* width: 70%; */
+  padding: 6px;
+}
+.divloads div img {
+  width: 60px;
+  height: 60px;
+}
+.divloads div a {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  display: block;
+  line-height: 22px;
+  /* identical to box height */
+
+  color: #d1d2de !important;
+}
+.divloads div a:hover {
+  color: #d1d2de !important;
+}
+.divloads div span {
+  display: block;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 19px;
+  /* identical to box height */
+
+  color: #d1d2de;
+}
+.paginationd {
+  display: none !important;
+}
+
+.divsizp {
+  width: 150px;
+}
+.divsizp span {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  /* identical to box height */
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  color: #57596f;
+  margin-bottom: 10px;
+}
+.divsizp p {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 30px;
+  /* identical to box height */
+
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  color: #9d9eb1;
+}
+.divtpsiz {
+  display: flex;
+  border-bottom: 1px solid #313240;
+}
+.brbb {
+  border-right: 1px solid #313240;
+  padding: 8px 0px 2px;
+  height: 160px;
+}
+.divbtsiz .brbb:last-child {
+  border-bottom: 0px solid !important;
+}
+.disdietb {
+  display: flex;
+  align-items: center;
+  padding: 0 8px;
+}
+.disdietb img {
+  width: 57px;
+  height: 57px;
+  margin-right: 6px;
+}
+.disdietb h2 {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 22px;
+
+  color: #ffffff;
+}
+.badgesdivdiet {
+  padding: 8px 8px 0;
+  border-bottom: 1px solid #313240;
+}
+.badgesdivdiet span {
+  display: inline-block;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 19px;
+  color: #ffffff;
+  padding: 6px 10px;
+  border-radius: 200px;
+}
+.badgred {
+  background: #e44545;
+}
+.badgblue {
+  background: #4598e4;
+}
+.badggreen {
+  background: #40ae58;
+}
+.badgblack {
+  background: #2b2c38;
+}
+.dietmainbt {
+  display: flex;
+}
+.dietmainbt .divbtsiz:last-child .brbb {
+  border-right: 0px !important;
+}
+.paginationdiv a {
+  width: 100% !important;
+}

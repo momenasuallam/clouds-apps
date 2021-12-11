@@ -1,0 +1,76 @@
+:root {
+  --white: #ffffff;
+  --pricolor: #ff0060;
+  --ghostwhite: #f3f6ff;
+  --gray1: #00000029;
+  --dblue: #122791;
+  --liwhite2: #c4c8de4d;
+  --text1: #57575b;
+  --text2: #9696a7;
+  --text3: #acb1cc;
+  --text4: #0a0a0a;
+  --black: #000000;
+  --green: #3eb27b;
+  --licyan: #dffcff;
+  --payanton: #1dd4e6;
+  --lightred: #ef4f65;
+  --purpleheart: #5a2ce3;
+  --liyellow: #fce76c;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+/* Main stuff */
+body {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+a {
+  font-family: "Poppins", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Scroll bar */
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #acb1cc;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #0f101b;
+}
+
+button:focus {
+  outline: 0px dotted !important;
+  outline: 0px auto !important;
+}
+
