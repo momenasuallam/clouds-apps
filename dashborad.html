@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clouds App</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://getbootstrap.com/docs/5.0/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./css/newstyle.css" />
+    <link rel="stylesheet" href="./css/navbar.css" />
+
+    <link rel="stylesheet" href="./css/app.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+          <a class="navbar-brand" href="#"><img src="./img/Logo.png" /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarScroll"
+            aria-controls="navbarScroll"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav me-auto my-2 my-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="dashborad.html">Dashboard</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Send</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Receive</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Borrow</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Reports</a>
+              </li>
+            </ul>
+
+            <div class="sidenav">
+              <a><img class="notiimg" src="./img/calendar-with-star.png" /> </a>
+              <a><img class="notiimg" src="./img/bell.png" /> </a>
+              <div class="userimg">
+                <img src="./img/user-profile-icon.png" />
+              </div>
+              <ul class="navbar-nav me-auto my-lg-0">
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Marc Anderson
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Profile</a></li>
+                    <li><a class="dropdown-item" href="#">Logout</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="mainclass">
+      <div class="container">
+        <div class="topdivp1">
+          <h2>Lorem Ipsum</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing os impedit imo
+            dignissimos culpa magnam animi magni tempore aliquid.
+          </p>
+          <a href="#" class="btnout1">EXPLORE MORE</a>
+        </div>
+        <div class="divcardsp1">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="invescard">
+                <span>INVESTORS</span>
+                <img src="./img/investor.png" />
+                <h3>Find the Best Personal Loans</h3>
+                <ul>
+                  <li>Lorem ipsum dolor sit amet</li>
+                  <li>
+                    Consectetur adipiscing elit, sed ei-usmod tempor incididunt
+                    ut.
+                  </li>
+                  <li>Labore et dolore magna aliqua</li>
+                </ul>
+                <a href="#" class="btnpri"> Buy Now</a>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="invescard">
+                <span>INVESTORS</span>
+                <img src="./img/borrowers.png" />
+                <h3>Find the Best Personal Loans</h3>
+                <ul>
+                  <li>Lorem ipsum dolor sit amet</li>
+                  <li>
+                    Consectetur adipiscing elit, sed ei-usmod tempor incididunt
+                    ut.
+                  </li>
+                  <li>Labore et dolore magna aliqua</li>
+                </ul>
+                <a href="#" class="btnpri"> Buy Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="divcard3p1">
+          <h2>Lorem Ipsum</h2>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="personaloan">
+                <span>PERSONAL LOANS</span>
+                <h3>Invest in Low</h3>
+                <div class="flextotal">
+                  <div>
+                    <h4>Total <span>$5,000</span></h4>
+                    <small>Start Date</small>
+                    <p>15-12-2012</p>
+                  </div>
+                  <div>
+                    <h4>Status <span>NA</span></h4>
+                    <small>End Date</small>
+                    <p>15-12-2012</p>
+                  </div>
+                </div>
+                <div class="chartdiv">
+                  <div class="chart-container">
+                    <canvas id="myChart" class="chartcanvas"></canvas>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="personaloan">
+                <span>PERSONAL LOANS</span>
+                <h3>Invest in Low</h3>
+                <div class="flextotal">
+                  <div>
+                    <h4>Total <span>$5,000</span></h4>
+                    <small>Start Date</small>
+                    <p>15-12-2012</p>
+                  </div>
+                  <div>
+                    <h4>Status <span>NA</span></h4>
+                    <small>End Date</small>
+                    <p>15-12-2012</p>
+                  </div>
+                </div>
+                <div class="chartdiv">
+                  <canvas id="myChart2" class="chartcanvas"></canvas>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="personaloan lasttotalloan">
+                <span>Total</span>
+                <h3>$ 751,25,000</h3>
+                <h5>P2P</h5>
+                <h5 class="platformtxt">Platforms</h5>
+                <div class="flextotal">
+                  <div>
+                    <small>Start Date</small>
+                    <p>15-12-2012</p>
+                  </div>
+                  <div>
+                    <small>Status</small>
+                    <p>NA</p>
+                  </div>
+                </div>
+                <a href="#" class="btnpri"> Buy Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Site footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-5">
+            <a href="#" class="footerlogo"><img src="./img/brand.png" /></a>
+            <p class="text-justify">
+              Lorem ipsum dolor sit amet, consectetur adipis lit, sed do eisumod
+              tempor incididunt ut labore et dolore magna aiqua.. Aamet,
+              consectetur adip, dc eisumod tempor incididunt ut.
+            </p>
+            <ul class="social-icons">
+              <li>
+                <a class="facebook" href="#"><i class="fa fa-facebook"></i></a>
+              </li>
+              <li>
+                <a class="twitter" href="#"><i class="fa fa-twitter"></i></a>
+              </li>
+              <li>
+                <a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a>
+              </li>
+              <li>
+                <a class="youtube" href="#"><i class="fa fa-youtube"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-1"></div>
+
+          <div class="col-xs-6 col-md-2">
+            <h6>Navigation</h6>
+            <ul class="footer-links">
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Pages</a></li>
+            </ul>
+          </div>
+
+          <div class="col-xs-6 col-md-2">
+            <h6>Feature</h6>
+            <ul class="footer-links">
+              <li><a href="#">Coll Stuff</a></li>
+              <li><a href="#">Random Feature</a></li>
+              <li><a href="#">Team Feature</a></li>
+            </ul>
+          </div>
+          <div class="col-xs-6 col-md-2">
+            <h6>Company</h6>
+            <ul class="footer-links">
+              <li><a href="#">About</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Our Process</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-sm-12 col-xs-12">
+            <p class="copyright-text">
+              &copy; DomainName 2021, All Rights Reserved
+            </p>
+          </div>
+
+          <div class="col-md-6 col-sm-12 col-xs-12">
+            <div class="footerlinksterms">
+              <a href="#">Privacy Policy</a>
+              <a href="#">Terms & Condidtions</a>
+              <a href="#">Code of Conduct</a>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <p class="bottomfd">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Voluptate, fuga. Ex at maxime eum odio quibusdam pariatur expedita
+              explicabo harum! Consectetur ducimus delectus nemo, totam odit!
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://getbootstrap.com/docs/5.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-3.5.1.js"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.3/Chart.js"></script>
+
+    <!-- <script type="text/javascript" src="./js/app.js"></script> -->
+    <script>
+      var ctx = document.getElementById("myChart").getContext("2d");
+      var ctx2 = document.getElementById("myChart2").getContext("2d");
+
+      const colors = {
+        darkBlue: {
+          fill: "#92bed2",
+          stroke: "#3282bf",
+        },
+        purple: {
+          fill: "#8fa8c8",
+          stroke: "#75539e",
+        },
+      };
+
+      const availableForExisting = [1, 2, 1, 2, 1, 2, 1];
+      const unavailable = [1, 2, 1, 2, 1, 2, 2];
+      const xData = [1, 2, 3, 4, 5, 6, 7];
+
+      const myChart = new Chart(ctx, {
+        type: "line",
+        data: {
+          labels: xData,
+          datasets: [
+            {
+              label: "",
+              fill: true,
+              backgroundColor: colors.purple.fill,
+              pointBackgroundColor: colors.purple.stroke,
+              borderColor: colors.purple.stroke,
+              pointHighlightStroke: colors.purple.stroke,
+              borderCapStyle: "butt",
+              data: unavailable,
+            },
+            {
+              label: "",
+              fill: true,
+              backgroundColor: colors.darkBlue.fill,
+              pointBackgroundColor: colors.darkBlue.stroke,
+              borderColor: colors.darkBlue.stroke,
+              pointHighlightStroke: colors.darkBlue.stroke,
+              borderCapStyle: "butt",
+              data: availableForExisting,
+            },
+          ],
+        },
+        options: {
+          legend: {
+            display: false,
+          },
+          responsive: true,
+          scales: {
+            xAxes: [
+              {
+                display: false,
+              },
+            ],
+            yAxes: [
+              {
+                display: false,
+                stacked: true,
+              },
+            ],
+          },
+          animation: {
+            duration: 750,
+          },
+        },
+      });
+
+      const myChart2 = new Chart(ctx2, {
+        type: "line",
+        data: {
+          labels: xData,
+          datasets: [
+            {
+              label: "",
+              fill: true,
+              backgroundColor: colors.purple.fill,
+              pointBackgroundColor: colors.purple.stroke,
+              borderColor: colors.purple.stroke,
+              pointHighlightStroke: colors.purple.stroke,
+              borderCapStyle: "butt",
+              data: unavailable,
+            },
+            {
+              label: "",
+              fill: true,
+              backgroundColor: colors.darkBlue.fill,
+              pointBackgroundColor: colors.darkBlue.stroke,
+              borderColor: colors.darkBlue.stroke,
+              pointHighlightStroke: colors.darkBlue.stroke,
+              borderCapStyle: "butt",
+              data: availableForExisting,
+            },
+          ],
+        },
+        options: {
+          legend: {
+            display: false,
+          },
+          responsive: true,
+          scales: {
+            xAxes: [
+              {
+                display: false,
+              },
+            ],
+            yAxes: [
+              {
+                display: false,
+                stacked: true,
+              },
+            ],
+          },
+          animation: {
+            duration: 750,
+          },
+        },
+      });
+    </script>
+  </body>
+</html>
