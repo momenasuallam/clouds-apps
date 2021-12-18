@@ -1,21 +1,5 @@
 :root {
   --white: #ffffff;
-  --pricolor: #ff0060;
-  --ghostwhite: #f3f6ff;
-  --gray1: #00000029;
-  --dblue: #122791;
-  --liwhite2: #c4c8de4d;
-  --text1: #57575b;
-  --text2: #9696a7;
-  --text3: #acb1cc;
-  --text4: #0a0a0a;
-  --black: #000000;
-  --green: #3eb27b;
-  --licyan: #dffcff;
-  --payanton: #1dd4e6;
-  --lightred: #ef4f65;
-  --purpleheart: #5a2ce3;
-  --liyellow: #fce76c;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
@@ -310,9 +294,10 @@ button:focus {
   color: #1b224a;
   background-color: #fff;
   border-radius: 4px;
-  padding: 6px 25px;
+  padding: 6px 8px;
   font-weight: 500;
   display: inline-block;
+  font-size: 16px;
 }
 .btnout2:hover {
   border: 1px solid #1b224a;
@@ -329,6 +314,7 @@ button:focus {
   transition: all 0.5s;
   display: inline-block;
   margin-top: 10px;
+   font-size: 16px;
 }
 .btnpri2:hover {
   border: 1px solid #1b224a;
@@ -390,12 +376,19 @@ button:focus {
   margin-bottom: 0px;
   color: #000;
 }
+.filterdiv {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 25px 25px 10px 25px;
+  margin-bottom: 30px;
+}
 .tablediv {
   background-color: #fff;
   border-radius: 8px;
   padding: 25px 25px 10px 25px;
   margin-bottom: 50px;
 }
+
 .datableresults {
   position: relative;
 }
@@ -403,6 +396,7 @@ button:focus {
   position: absolute;
   right: 25px;
   top: 6px;
+  display: none;
 }
 #datableresults_filter label {
   display: flex;
@@ -411,9 +405,7 @@ button:focus {
 #datableresults_filter label input {
   margin-left: 10px;
 }
-.responsive-table {
-  overflow-x: auto;
-}
+
 .page-item.active .page-link {
   color: #000;
   background-color: transparent !important;
@@ -532,7 +524,7 @@ table.dataTable tbody td {
   align-items: center;
 }
 .rangediv h2 {
-  font-size: 26px;
+  font-size: 22px;
   width: 180px;
   margin-bottom: 0px;
 }
@@ -587,8 +579,8 @@ input[type="range"]::-moz-focus-outer {
 }
 input[type="range"]::-moz-range-thumb {
   position: relative;
-  height: 28px;
-  width: 28px;
+  height: 20px;
+  width: 20px;
   margin: 5px 0;
   border-radius: 50%;
   background-color: #fff;
@@ -606,8 +598,8 @@ input[type="range"]::-moz-range-thumb:active {
 }
 input[type="range"]::-webkit-slider-thumb {
   position: relative;
-  height: 28px;
-  width: 28px;
+  height: 20px;
+  width: 20px;
   margin: 5px 0;
   border-radius: 50%;
   background-color: #fff;
@@ -645,6 +637,42 @@ input[type="range"]::-webkit-slider-thumb:active {
 .platformtxt {
   margin-bottom: 25px !important;
 }
+#datableresults tr{
+  cursor: pointer;
+}
+
+/* .tblt1 {
+    width: 80px !important;
+}
+.tblt2 {
+    width: 150px !important;
+}
+.tblt3 {
+    width: 150px !important;
+}
+.tblt4 {
+    width: 150px !important;
+}
+.tblt5 {
+    width: 218px !important;
+} */
+.modaldatbodytxt{
+display: flex ;
+flex-wrap: wrap;
+}
+.modaldatbodytxt div{
+width: 50%;
+}
+.modaldatbodytxt h2{
+font-size: 18px;
+margin-bottom: 0px;
+}
+.modaldatbodytxt p{
+font-size: 16px;
+}
+.modal-title{
+  font-size: 18px;
+}
 
 @media (max-width: 768px) {
   #datableresults_filter {
@@ -676,4 +704,10 @@ input[type="range"]::-webkit-slider-thumb:active {
     width: 40px;
     right: 12px;
   }
+}
+@media(max-width:1000px)
+{
+  .responsive-table {
+  overflow-x: auto;
+}
 }

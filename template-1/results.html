@@ -92,9 +92,9 @@
         <div class="topdivp1">
           <h2>Lorem Ipsum</h2>
         </div>
-
-        <div class="tablediv">
-          <div class="topselection">
+        
+        <div class="filterdiv">
+                <div class="topselection">
             <div>
               <span>Country</span>
               <select class="form-select">
@@ -156,19 +156,61 @@
             </div>
           </div>
 
+            <div class="rangediv">
+         <div style="display: flex;">
+             <h2>Interset Rates</h2>
+            <p>
+              <span id="fromIR">$1</span><span> - </span
+              ><span id="toIR">$100</span>
+            </p>
+         </div>
+            <div class="multi-range">
+              <input
+                id="minir"
+                type="range"
+                min="0"
+                max="100"
+                value="0"
+                step="0.0001"
+              />
+              <input
+                id="maxir"
+                type="range"
+                min="0"
+                max="100"
+                value="100"
+                step="0.0001"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="tablediv">
           <div class="responsive-table">
-            <table id="datableresults" class="display" style="width: 100%">
+            <table id="datableresults" class="display tableresults1" style="width: 100%">
               <thead>
                 <tr>
-                  <th width="50px"><span class="dthead">Flag</span></th>
-                  <th width="100px"><span class="dthead">Loan Type</span></th>
-                  <th width="100px"><span class="dthead">Retails</span></th>
-                  <th width="150px"><span class="dthead">Platforms</span></th>
-                  <th width="150px"></th>
+                  <th class="tblt1"><span class="dthead">Flag</span></th>
+                  <th class="tblt2"><span class="dthead">Loan Type</span></th>
+                  <th class="tblt3"><span class="dthead">Retails</span></th>
+                  <th class="tblt4"><span class="dthead">Platforms</span></th>
+                  <th class="tblt5"></th>
                 </tr>
               </thead>
               <tbody>
-                <tr>
+                <tr  data-id="1" >
+                  <td class="tblt1"><img src="./img/sweden.png" /></td>
+                  <td class="tblt2">Mortage Loans</td>
+                  <td class="tblt3">Retail Name</td>
+                  <td class="tblt4">Platform Name</td>
+                  <td class="tblt5">
+                  
+                      <a href="#" class="btnout2">Learn more</a>
+                      <a href="#" class="btnpri2">Apply</a>
+                   
+                  </td>
+                </tr>
+                <tr  data-id="2">
                   <td><img src="./img/sweden.png" /></td>
                   <td>Mortage Loans</td>
                   <td>Retail Name</td>
@@ -180,7 +222,7 @@
                     </div>
                   </td>
                 </tr>
-                <tr>
+                <tr  data-id="3">
                   <td><img src="./img/sweden.png" /></td>
                   <td>Mortage Loans</td>
                   <td>Retail Name</td>
@@ -192,7 +234,7 @@
                     </div>
                   </td>
                 </tr>
-                <tr>
+                <tr  data-id="4">
                   <td><img src="./img/sweden.png" /></td>
                   <td>Mortage Loans</td>
                   <td>Retail Name</td>
@@ -204,7 +246,7 @@
                     </div>
                   </td>
                 </tr>
-                <tr>
+                <tr  data-id="5">
                   <td><img src="./img/sweden.png" /></td>
                   <td>Mortage Loans</td>
                   <td>Retail Name</td>
@@ -216,7 +258,7 @@
                     </div>
                   </td>
                 </tr>
-                <tr>
+                <tr data-id="6">
                   <td><img src="./img/sweden.png" /></td>
                   <td>Mortage Loans</td>
                   <td>Retail Name</td>
@@ -228,7 +270,7 @@
                     </div>
                   </td>
                 </tr>
-                <tr>
+                <tr data-id="7">
                   <td><img src="./img/sweden.png" /></td>
                   <td>Mortage Loans</td>
                   <td>Retail Name</td>
@@ -240,7 +282,7 @@
                     </div>
                   </td>
                 </tr>
-                <tr>
+                <tr data-id="8">
                   <td><img src="./img/sweden.png" /></td>
                   <td>Mortage Loans</td>
                   <td>Retail Name</td>
@@ -252,7 +294,7 @@
                     </div>
                   </td>
                 </tr>
-                <tr>
+                <tr data-id="9">
                   <td><img src="./img/sweden.png" /></td>
                   <td>Mortage Loans</td>
                   <td>Retail Name</td>
@@ -264,7 +306,7 @@
                     </div>
                   </td>
                 </tr>
-                <tr>
+                <tr data-id="10">
                   <td><img src="./img/sweden.png" /></td>
                   <td>Mortage Loans</td>
                   <td>Retail Name</td>
@@ -276,19 +318,7 @@
                     </div>
                   </td>
                 </tr>
-                <tr>
-                  <td><img src="./img/sweden.png" /></td>
-                  <td>Mortage Loans</td>
-                  <td>Retail Name</td>
-                  <td>Platform Name</td>
-                  <td>
-                    <div>
-                      <a href="#" class="btnout2">Learn more</a>
-                      <a href="#" class="btnpri2">Apply</a>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
+                <tr  data-id="11">
                   <td><img src="./img/sweden.png" /></td>
                   <td>Mortage Loans</td>
                   <td>Retail Name</td>
@@ -306,6 +336,33 @@
         </div>
       </div>
     </main>
+
+ <div class="modal fade" id="tablerowdatamodal" tabindex="-1" aria-labelledby="tablerowdatamodalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">More data</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+      <div class="modaldatbodytxt">
+        <div>
+          <h2>Loan Type</h2>
+          <p>Mortage Loans</p>
+        </div>
+         <div>
+          <h2>Retails</h2>
+          <p>Retail Name</p>
+        </div>
+         <div>
+          <h2>Platform</h2>
+          <p>Platform Name</p>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
 
     <!-- Site footer -->
     <footer class="site-footer">
