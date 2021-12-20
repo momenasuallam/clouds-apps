@@ -524,13 +524,14 @@ table.dataTable tbody td {
   align-items: center;
 }
 .rangediv h2 {
-  font-size: 22px;
-  width: 180px;
-  margin-bottom: 0px;
+     font-size: 17px;
+    width: 150px;
+    margin-bottom: 0px;
+    font-weight: 600;
 }
 .rangediv p {
-  font-size: 15px;
-  width: 150px;
+  font-size: 14px;
+  width: 130px;
   margin-bottom: 0px;
   margin-top: 4px;
 }

@@ -115,8 +115,7 @@ minSlider.addEventListener('input', () => {
 
 // ----------------------------------------------------
 $(function () {
-
-  $(".tableresults1").on("click", function () {
-      $("#tablerowdatamodal").modal("show");
-    });
+  $(".tableresults1 tbody tr").on("click", function () {
+    $("#tablerowdatamodal").modal("show");
+  });
 });
