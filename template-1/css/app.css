@@ -674,6 +674,19 @@ font-size: 16px;
 .modal-title{
   font-size: 18px;
 }
+.btn-close:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 0%) !important;
+}
+button:focus {
+    box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 0%) !important;
+}
+.page-link:focus {
+    box-shadow: rgb(13 110 253 / 0%) 0px 0px 0px 0rem !important;
+}
+.dataTables_wrapper .dataTables_length select{
+  text-align: center;
+}
 
 @media (max-width: 768px) {
   #datableresults_filter {

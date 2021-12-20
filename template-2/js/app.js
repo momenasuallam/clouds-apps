@@ -1,6 +1,7 @@
 $(document).ready(function () {
   $("#datableresults").DataTable({
     // ajax: "../ajax/table.txt",
+    
   });
 });
 // Interest Rate
@@ -114,12 +115,11 @@ minSlider.addEventListener('input', () => {
 })
 
 // ----------------------------------------------------
-$(function () {
-  $(".tableresults1 tbody tr").on("click", function (event) {
-       var getIdFromRow = $(event.target).closest("tr").data("id"); //get the id from tr
-       //make your ajax call populate items or what even you need
-      //  alert(getIdFromRow);
-       $("#orderDetails").html($("<p> Row selected: " + getIdFromRow + "</p>"));
-    $("#tablerowdatamodal").modal("show");
-  });
-});
+
+ $(".tableresults1").on("click", "tr", function (event) {
+   var val = $("td", this).eq(2).text(); //eq(2) increase the value inside eq() will display the txt column wise.
+     var getIdFromRow = $(event.target).closest("tr").data("id");
+      $("#orderDetails").html($("<p> Row selected: " + getIdFromRow + "</p>"));
+   $("#tablerowdatamodal").modal("show");
+   $(".text-center").text(val);
+ });
