@@ -115,7 +115,11 @@ minSlider.addEventListener('input', () => {
 
 // ----------------------------------------------------
 $(function () {
-  $(".tableresults1 tbody tr").on("click", function () {
+  $(".tableresults1 tbody tr").on("click", function (event) {
+       var getIdFromRow = $(event.target).closest("tr").data("id"); //get the id from tr
+       //make your ajax call populate items or what even you need
+      //  alert(getIdFromRow);
+       $("#orderDetails").html($("<p> Row selected: " + getIdFromRow + "</p>"));
     $("#tablerowdatamodal").modal("show");
   });
 });
